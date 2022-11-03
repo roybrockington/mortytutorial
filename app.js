@@ -21,9 +21,9 @@ const findCharacters = async () => {
   const mappedCharacters = data.map((character, index) => {
 
     return `<div class="character" key="{index}"> 
-             <div class="name">
-             <p>${index + 1}. ${character.name}</p>
-             <img src="${character.image}"/>
+             <div class="attributes">
+             <p class="name">${index + 1}. ${character.name}</p>
+             <img class="avatar" src="${character.image}"/>
              </div>
             </div>`
       }).join('') // Remove automatic comma delimiter
