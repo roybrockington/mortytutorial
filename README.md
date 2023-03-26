@@ -1,6 +1,6 @@
 # mortytutorial
 
-GCSE tutorial to show simply asynchronous fetching of data to be mapped in template literals.
+A Level tutorial to show simply asynchronous fetching of data to be mapped in template literals.
 
 Uses open-source Rick & Morty API – full details [here](https://rickandmortyapi.com/documentation/)
 
