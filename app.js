@@ -1,8 +1,13 @@
 // Target the div where results should be shown
 const results = document.getElementById("results")
 
+// Choose character IDs to getElementById
+const randomArray = (length, max) => 
+  Array(length).fill().map(() => Math.round(Math.random() * max))
+
+
 // Set API URL from where to fetch data
-const api = 'https://rickandmortyapi.com/api/character/[1,2,3,4]'
+let api = `https://rickandmortyapi.com/api/character/${randomArray(4, 40)}`
 
 // Function that runs when the button is pressed
 const findCharacters = async () => {
@@ -41,4 +46,6 @@ const findCharacters = async () => {
 // Function to clearing the results element
 const clearCharacters = () => {
   results.innerHTML = ''
+  api = `https://rickandmortyapi.com/api/character/${randomArray(4, 40)}`
+
 }
